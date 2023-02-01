@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package example.v1;
+
+message Foo {
+  MyEnum my_enum = 1;
+}
+
+enum MyEnum {
+  MY_ENUM_UNSPECIFIED = 0;
+  MY_ENUM_FOO = 1;
+}

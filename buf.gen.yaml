@@ -1,0 +1,11 @@
+version: v1
+
+managed: 
+  enabled: true
+  go_package_prefix:    
+    default: github.com/torkelrogstad/proto-enum-example/gen/go
+
+plugins:  # Use protoc-gen-go at v1.28.1  
+  - plugin: buf.build/protocolbuffers/go:v1.28.1    
+    out: gen/go    
+    opt: paths=source_relative
